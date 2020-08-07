@@ -22,3 +22,14 @@ var questionsArr = [
 var question = document.getElementById("question");
 question.innerText = questionsArr[0].questions;
 
+var option1 = document.getElementById("option1");
+option1.innerText = questionsArr[0].answers[0];
+option1.addEventListener("click", function(){
+    localStorage.setItem("question1", questionsArr[0].answers[0])
+  });
+var option2 = document.getElementById("option2");
+option2.innerText = questionsArr[0].answers[1];
+var option3 = document.getElementById("option3");
+option3.innerText = questionsArr[0].answers[2];
+var option4 = document.getElementById("option4");
+option4.innerText = questionsArr[0].answers[3];
