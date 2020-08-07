@@ -18,3 +18,7 @@ var questionsArr = [
 }
 
 ];
+
+var question = document.getElementById("question");
+question.innerText = questionsArr[0].questions;
+
